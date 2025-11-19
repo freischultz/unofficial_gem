@@ -255,19 +255,19 @@
         "hidden": false
     },
     "spr-icon-pc-emilia2-01": {
-        "name": "Sage Emilia",
-        "icon": "SPR_Icon_PC_Emilia2_01.png",
-        "group": "Port Of Coimbra",
-        "is_rare": true,
-        "classification": "Recruit",
-        "hidden": false
-    },
-    "spr-icon-pc-emilia3-01": {
         "name": "Reckless Emilia",
-        "icon": "SPR_Icon_PC_Emilia3_01.png",
+        "icon": "SPR_Icon_PC_Emilia2_01.png",
         "group": "Port Of Coimbra",
         "is_rare": false,
         "classification": "Stock",
+        "hidden": false
+    },
+    "spr-icon-pc-emilia3-01": {
+        "name": "Sage Emilia",
+        "icon": "SPR_Icon_PC_Emilia3_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": true,
+        "classification": "Recruit",
         "hidden": false
     },
     "spr-icon-pc-emilia-01": {

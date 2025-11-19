@@ -56,7 +56,7 @@ NAME_MAPPING = {
     "Battlefield Claude": "Claude2",
     "Scavenger Yeganeh": "Yeganeh2",
     "Sniper Bernelli": "Berneli2", # Note spelling Berneli vs Bernelli
-    "Sage Emilia": "Emilia2",
+    "Sage Emilia": "Emilia3",
     "Pirate Adelina": "Adelina2",
     "Mercenary Calyce": "Calyce2",
     "Cannon Shooter Claire": "Clair2", # Claire vs Clair
@@ -69,7 +69,7 @@ NAME_MAPPING = {
     "Banshee Natalie": "Natalie2",
     "Cold Hearted Ganazu": "Ganazu2",
     "Cold Hearted Ganuzu": "Ganazu2", # User typo handling
-    "Reckless Emilia": "Emilia3", 
+    "Reckless Emilia": "Emilia2", 
     "Selva Norte": "Selva",
     "Catherine Torsche": "Catherine2", # Fixed from Torshe
     "Rescue Knight": "Rescue", 
