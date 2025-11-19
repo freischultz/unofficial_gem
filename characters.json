@@ -227,7 +227,7 @@
     "spr-icon-pc-ganazu2-01": {
         "name": "Ganazu (Rare)",
         "icon": "SPR_Icon_PC_Ganazu2_01.png",
-        "group": "Stock Characters",
+        "group": "Bahamar",
         "is_rare": true,
         "hidden": true,
         "classification": "Stock",
@@ -317,7 +317,7 @@
     "spr-icon-pc-jacky-01": {
         "name": "Jacky",
         "icon": "SPR_Icon_PC_Jacky_01.png",
-        "group": "Ustiur",
+        "group": "Unreleased",
         "is_rare": false
     },
     "spr-icon-pc-jack-01": {
@@ -443,7 +443,7 @@
     "spr-icon-pc-mertis-01": {
         "name": "Mertis",
         "icon": "SPR_Icon_PC_Mertis_01.png",
-        "group": "Unreleased",
+        "group": "Bahamar",
         "is_rare": false
     },
     "spr-icon-pc-mia-01": {
@@ -805,7 +805,7 @@
     "spr-icon-pc-echella2-01": {
         "name": "Echella (Rare)",
         "icon": "SPR_Icon_PC_Echella2_01.png",
-        "group": "Stock Characters",
+        "group": "Unreleased",
         "is_rare": true,
         "classification": "Stock",
         "hidden": true,
