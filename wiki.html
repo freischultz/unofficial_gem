@@ -1,17 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Granado Espada M - Wiki</title>
-
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rajdhani:wght@600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script>
         tailwind.config = {
@@ -50,7 +48,6 @@
             min-height: 100vh;
             color: #e2e8f0;
         }
-
         body::before {
             content: '';
             position: absolute;
@@ -61,7 +58,6 @@
             background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.7));
             z-index: -1;
         }
-
         .glass-panel {
             background: rgba(30, 41, 59, 0.7);
             backdrop-filter: blur(16px);
@@ -69,53 +65,35 @@
             border: 1px solid rgba(255, 255, 255, 0.08);
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
         }
-
         .glass-card {
             background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.05);
             transition: transform 0.2s ease, background-color 0.2s ease;
         }
-
         .glass-card:hover {
             transform: translateY(-2px);
             background-color: rgba(255, 255, 255, 0.08);
             border-color: rgba(255, 255, 255, 0.2);
         }
-
         /* Rarity Borders */
-        .border-stock {
-            border-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .border-scout {
-            border-color: #4ade80;
-            box-shadow: 0 0 10px rgba(74, 222, 128, 0.2);
-        }
-
-        .border-recruit {
-            border-color: #fbbf24;
-            box-shadow: 0 0 10px rgba(251, 191, 36, 0.2);
-        }
+        .border-stock { border-color: rgba(255, 255, 255, 0.2); }
+        .border-scout { border-color: #4ade80; box-shadow: 0 0 10px rgba(74, 222, 128, 0.2); }
+        .border-recruit { border-color: #fbbf24; box-shadow: 0 0 10px rgba(251, 191, 36, 0.2); }
     </style>
 
 </head>
-
 <body class="antialiased p-4 sm:p-6">
     <div class="max-w-[1600px] mx-auto">
-        <header
-            class="flex flex-col md:flex-row items-center justify-between gap-6 mb-8 glass-panel rounded-2xl p-4 md:px-8">
+        <header class="flex flex-col md:flex-row items-center justify-between gap-6 mb-8 glass-panel rounded-2xl p-4 md:px-8">
             <div class="flex items-center gap-4">
-                <img src="https://gem.playpark.com/wp-content/uploads/2024/11/1-gem-logo.png" alt="Granado Espada M"
-                    class="h-16 object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]"
-                    onerror="this.onerror=null;this.src='https://i.imgur.com/kSTiS9s.png';">
+                <img src="https://gem.playpark.com/wp-content/uploads/2024/11/1-gem-logo.png" alt="Granado Espada M" class="h-16 object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]" onerror="this.onerror=null;this.src='https://i.imgur.com/kSTiS9s.png';">
                 <div class="hidden sm:block border-l border-white/10 pl-4">
                     <h1 class="text-xl font-bold text-white tracking-wide">CHARACTER WIKI</h1>
                     <p class="text-xs text-accent-blue font-medium tracking-wider uppercase">Database & Stats</p>
                 </div>
             </div>
-            <a href="https://freischultz.github.io/unofficial_gem/index.html"
-                class="flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/5 hover:border-white/20 text-white px-5 py-2 rounded-lg text-sm font-bold uppercase tracking-wide transition-all group">
+            <a href="https://freischultz.github.io/unofficial_gem/index.html" class="flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/5 hover:border-white/20 text-white px-5 py-2 rounded-lg text-sm font-bold uppercase tracking-wide transition-all group">
                 <i class="ph-bold ph-arrow-u-up-left group-hover:-translate-x-1 transition-transform"></i>
                 Back to Tracker
             </a>
@@ -125,8 +103,7 @@
             <div class="mb-8 flex items-center gap-4 pb-6 border-b border-white/5">
                 <div class="relative w-full max-w-md">
                     <i class="ph-bold ph-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
-                    <input type="text" placeholder="Search characters..."
-                        class="w-full bg-black/20 border border-white/10 rounded-lg py-2 pl-10 pr-4 text-sm text-white focus:outline-none focus:border-accent-blue transition-colors placeholder-gray-500">
+                    <input type="text" placeholder="Search characters..." class="w-full bg-black/20 border border-white/10 rounded-lg py-2 pl-10 pr-4 text-sm text-white focus:outline-none focus:border-accent-blue transition-colors placeholder-gray-500">
                 </div>
                 <div class="text-xs text-gray-500 font-mono uppercase tracking-widest ml-auto">
                     Database Version 1.0
@@ -134,1145 +111,706 @@
             </div>
 
             <div class="space-y-10">
-
-                <section>
-                    <h2
-                        class="text-lg font-bold text-accent-gold uppercase tracking-widest mb-4 flex items-center gap-2">
-                        <i class="ph-fill ph-users-three"></i> Stock Characters
-                    </h2>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
-
-                        <a href="characters/retiff-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Retiff_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Retiff</span>
-                        </a>
-
-                        <a href="characters/canabel-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Canabel_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Canabel</span>
-                        </a>
-
-                        <a href="characters/echella-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Echella_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Echella</span>
-                        </a>
-
-                        <a href="characters/tikanile-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Tikanile_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Tikanile</span>
-                        </a>
-
-                        <a href="characters/ganazu-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Ganazu_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Ganazu</span>
-                        </a>
-
-                        <a href="characters/roizia-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Roizia_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Roizia</span>
-                        </a>
-
-                        <a href="characters/rakib-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Rakib_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Rakib</span>
-                        </a>
-
-                        <a href="characters/nolette-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Nolette_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Nolette</span>
-                        </a>
-
-                        <a href="characters/nix-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Nix_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Nix</span>
-                        </a>
-
-                        <a href="characters/henik-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Henik_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Henik</span>
-                        </a>
-                    </div>
-                </section>
-                <section>
-                    <h2
-                        class="text-lg font-bold text-accent-blue uppercase tracking-widest mb-4 flex items-center gap-2">
-                        <i class="ph-fill ph-buildings"></i> Cite Of Reboldouex
-                    </h2>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
-
-                        <a href="characters/andre-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Andre_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Andre</span>
-                        </a>
-
-                        <a href="characters/angie-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Angie_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Angie</span>
-                        </a>
-
-                        <a href="characters/brunie-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Brunie_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Brunie</span>
-                        </a>
-
-                        <a href="characters/claude2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Claude2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Battlefield
-                                Claude</span>
-                        </a>
-
-                        <a href="characters/claude-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Claude_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Claude</span>
-                        </a>
-
-                        <a href="characters/falso-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Falso_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Falso</span>
-                        </a>
-
-                        <a href="characters/idge2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Idge2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Battlesmith
-                                Idge</span>
-                        </a>
-
-                        <a href="characters/idge-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Idge_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Idge</span>
-                        </a>
-
-                        <a href="characters/jack-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Jack_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Jack</span>
-                        </a>
-
-                        <a href="characters/lyndon-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Lyndon_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Lyndon</span>
-                        </a>
-
-                        <a href="characters/panfilo2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Panfilo2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Battlecook
-                                Panfilo</span>
-                        </a>
-
-                        <a href="characters/panfilo-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Panfilo_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Panfilo</span>
-                        </a>
-
-                        <a href="characters/ramiro-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Ramiro_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Ramiro</span>
-                        </a>
-
-                        <a href="characters/sharif-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Sharif_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Sharif</span>
-                        </a>
-
-                        <a href="characters/tiburon-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Tiburon_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Tiburon</span>
-                        </a>
-
-                        <a href="characters/verita-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Verita_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Verita</span>
-                        </a>
-
-                        <a href="characters/yeganeh2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Yeganeh2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-scout group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Scavenger
-                                Yeganeh</span>
-                        </a>
-
-                        <a href="characters/yeganeh-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Yeganeh_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Yeganeh</span>
-                        </a>
-                    </div>
-                </section>
-                <section>
-                    <h2
-                        class="text-lg font-bold text-accent-blue uppercase tracking-widest mb-4 flex items-center gap-2">
-                        <i class="ph-fill ph-anchor"></i> Port Of Coimbra
-                    </h2>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
-
-                        <a href="characters/adelina2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Adelina2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Pirate
-                                Adelina</span>
-                        </a>
-
-                        <a href="characters/adelina-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Adelina_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Adelina</span>
-                        </a>
-
-                        <a href="characters/alejandro-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Alejandro_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Alejandro</span>
-                        </a>
-
-                        <a href="characters/bane-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Bane_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Bane</span>
-                        </a>
-
-                        <a href="characters/becky-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Becky_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Becky</span>
-                        </a>
-
-                        <a href="characters/berneli2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Berneli2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Sniper
-                                Berneli</span>
-                        </a>
-
-                        <a href="characters/berneli-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Berneli_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Berneli</span>
-                        </a>
-
-                        <a href="characters/calyce2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Calyce2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Mercenary
-                                Calyce</span>
-                        </a>
-
-                        <a href="characters/calyce-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Calyce_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Calyce</span>
-                        </a>
-
-                        <a href="characters/cortasar-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Cortasar_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Cortasar</span>
-                        </a>
-
-                        <a href="characters/emilia2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Emilia2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Reckless
-                                Emilia</span>
-                        </a>
-
-                        <a href="characters/emilia3-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Emilia3_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Emilia
-                                The Sage</span>
-                        </a>
-
-                        <a href="characters/emilia-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Emilia_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Emilia</span>
-                        </a>
-
-                        <a href="characters/gracielo-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Gracielo_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Gracielo</span>
-                        </a>
-
-                        <a href="characters/irawan-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Irawan_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Irawan</span>
-                        </a>
-
-                        <a href="characters/lisa-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Lisa_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Lisa</span>
-                        </a>
-
-                        <a href="characters/loretta-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Loretta_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Loretta</span>
-                        </a>
-
-                        <a href="characters/mboma-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Mboma_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Mboma</span>
-                        </a>
-
-                        <a href="characters/ralph-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Ralph_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Ralph</span>
-                        </a>
-
-                        <a href="characters/roht-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Roht_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Roht</span>
-                        </a>
-
-                        <a href="characters/soho2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Soho2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Soho
-                                The Fighter</span>
-                        </a>
-
-                        <a href="characters/soho-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Soho_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Soho</span>
-                        </a>
-
-                        <a href="characters/vanessa-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Vanessa_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Vanessa</span>
-                        </a>
-
-                        <a href="characters/vinar-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Vinar_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Vinar</span>
-                        </a>
-                    </div>
-                </section>
-                <section>
-                    <h2
-                        class="text-lg font-bold text-accent-blue uppercase tracking-widest mb-4 flex items-center gap-2">
-                        <i class="ph-fill ph-city"></i> City of Auch
-                    </h2>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
-
-                        <a href="characters/backho-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Backho_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Backho</span>
-                        </a>
-
-                        <a href="characters/bianca-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Bianca_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Bianca</span>
-                        </a>
-
-                        <a href="characters/catherine2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Catherine2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Catherine
-                                Torsche</span>
-                        </a>
-
-                        <a href="characters/catherine-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Catherine_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Catherine</span>
-                        </a>
-
-                        <a href="characters/chungha-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Chungha_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Chungha</span>
-                        </a>
-
-                        <a href="characters/clair2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Clair2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Cannon
-                                Shooter Claire</span>
-                        </a>
-
-                        <a href="characters/clair3-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Clair3_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Cutie
-                                Claire</span>
-                        </a>
-
-                        <a href="characters/clair-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Clair_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Claire</span>
-                        </a>
-
-                        <a href="characters/elizabeth-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Elizabeth_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Elizabeth</span>
-                        </a>
-
-                        <a href="characters/friede-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Friede_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Friede</span>
-                        </a>
-
-                        <a href="characters/garcia-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Garcia_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Garcia</span>
-                        </a>
-
-                        <a href="characters/gurtrude-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Gurtrude_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Gurtrude</span>
-                        </a>
-
-                        <a href="characters/hellena-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Hellena_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Hellena</span>
-                        </a>
-
-                        <a href="characters/jaina-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Jaina_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Jaina</span>
-                        </a>
-
-                        <a href="characters/jane-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Jane_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Jane</span>
-                        </a>
-
-                        <a href="characters/jin-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Jin_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Jin</span>
-                        </a>
-
-                        <a href="characters/kane-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Kane_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Kane</span>
-                        </a>
-
-                        <a href="characters/karjalainen2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Karjalainen2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Designer
-                                Karjalainen</span>
-                        </a>
-
-                        <a href="characters/karjalainen-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Karjalainen_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Karjalainen</span>
-                        </a>
-
-                        <a href="characters/keuen-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Keuen_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Keuen</span>
-                        </a>
-
-                        <a href="characters/kiss-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Kiss_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Kiss</span>
-                        </a>
-
-                        <a href="characters/lorch2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Lorch2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Meister
-                                Lorch</span>
-                        </a>
-
-                        <a href="characters/lorch-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Lorch_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Lorch</span>
-                        </a>
-
-                        <a href="characters/mary-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Mary_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Mary</span>
-                        </a>
-
-                        <a href="characters/miha-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Miha_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Miha</span>
-                        </a>
-
-                        <a href="characters/miho-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Miho_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Miho</span>
-                        </a>
-
-                        <a href="characters/rio2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Rio2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Conductor
-                                Rio</span>
-                        </a>
-
-                        <a href="characters/rio-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Rio_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Rio</span>
-                        </a>
-
-                        <a href="characters/sherry-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Sherry_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Sherry</span>
-                        </a>
-
-                        <a href="characters/trina-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Trina_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Trina</span>
-                        </a>
-
-                        <a href="characters/valleria2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Valleria2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Valleria
-                                Vendetta</span>
-                        </a>
-
-                        <a href="characters/valleria-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Valleria_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Valleria</span>
-                        </a>
-
-                        <a href="characters/viki-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Viki_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Viki</span>
-                        </a>
-                    </div>
-                </section>
-                <section>
-                    <h2
-                        class="text-lg font-bold text-accent-blue uppercase tracking-widest mb-4 flex items-center gap-2">
-                        <i class="ph-fill ph-tree-palm"></i> Ustiur
-                    </h2>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
-
-                        <a href="characters/grandma2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Grandma2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Pioneer
-                                Grenmah</span>
-                        </a>
-
-                        <a href="characters/grandma-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Grandma_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Grenmah</span>
-                        </a>
-
-                        <a href="characters/ivy-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Ivy_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Ivy</span>
-                        </a>
-
-                        <a href="characters/marcelino-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Marcelino_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Marcelino</span>
-                        </a>
-
-                        <a href="characters/ouchsoldier-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Ouchsoldier_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Rescue
-                                Knight</span>
-                        </a>
-
-                        <a href="characters/romina2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Romina2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Cadet
-                                Romina</span>
-                        </a>
-
-                        <a href="characters/romina-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Romina_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Romina</span>
-                        </a>
-
-                        <a href="characters/serth-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Serth_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Serth</span>
-                        </a>
-
-                        <a href="characters/sharon2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Sharon2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Sharon
-                                The Sage</span>
-                        </a>
-
-                        <a href="characters/sharon-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Sharon_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Sharon</span>
-                        </a>
-
-                        <a href="characters/sierra-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Sierra_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Sierra</span>
-                        </a>
-                    </div>
-                </section>
-                <section>
-                    <h2
-                        class="text-lg font-bold text-accent-blue uppercase tracking-widest mb-4 flex items-center gap-2">
-                        <i class="ph-fill ph-plant"></i> Bahamar
-                    </h2>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
-
-                        <a href="characters/laval-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Laval_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Laval</span>
-                        </a>
-
-                        <a href="characters/mertis-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Mertis_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Mertis</span>
-                        </a>
-
-                        <a href="characters/nena-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Nena_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Nena</span>
-                        </a>
-
-                        <a href="characters/psyche-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Psyche_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Psyche</span>
-                        </a>
-
-                        <a href="characters/seolhwa-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Seolhwa_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Seolhwa</span>
-                        </a>
-                    </div>
-                </section>
-                <section>
-                    <h2
-                        class="text-lg font-bold text-accent-blue uppercase tracking-widest mb-4 flex items-center gap-2">
-                        <i class="ph-fill ph-snowflake"></i> Katovic
-                    </h2>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
-                        <div class="col-span-full text-center py-8 text-gray-500 text-sm italic">
-                            No characters added yet.
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h2
-                        class="text-lg font-bold text-accent-blue uppercase tracking-widest mb-4 flex items-center gap-2">
-                        <i class="ph-fill ph-skull"></i> Los Toldos
-                    </h2>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
-
-                        <a href="characters/eduardo-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Eduardo_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Eduardo</span>
-                        </a>
-
-                        <a href="characters/giltine-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Giltine_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Giltine</span>
-                        </a>
-
-                        <a href="characters/kurt-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Kurt_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Kurt</span>
-                        </a>
-                    </div>
-                </section>
-                <section>
-                    <h2
-                        class="text-lg font-bold text-accent-blue uppercase tracking-widest mb-4 flex items-center gap-2">
-                        <i class="ph-fill ph-island"></i> Gigante
-                    </h2>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
-
-                        <a href="characters/ludin-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Ludin_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Ludin</span>
-                        </a>
-
-                        <a href="characters/rosa-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Rosa_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Rosa</span>
-                        </a>
-
-                        <a href="characters/sorang-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Sorang_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Sorang</span>
-                        </a>
-
-                        <a href="characters/soso-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Soso_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Soso</span>
-                        </a>
-                    </div>
-                </section>
-                <section>
-                    <h2
-                        class="text-lg font-bold text-accent-red uppercase tracking-widest mb-4 flex items-center gap-2">
-                        <i class="ph-fill ph-lock-key"></i> Unreleased
-                    </h2>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
-
-                        <a href="characters/ania2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
-                            <img src="images/icons/SPR_Icon_PC_Ania2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
-                            <span
-                                class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Guardian
-                                Ania</span>
-                        </a>
-
-                        <a href="characters/ania-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
-                            <img src="images/icons/SPR_Icon_PC_Ania_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
-                            <span
-                                class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Ania</span>
-                        </a>
-
-                        <a href="characters/asoka-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
-                            <img src="images/icons/SPR_Icon_PC_Asoka_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
-                            <span
-                                class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Asoka</span>
-                        </a>
-
-                        <a href="characters/delfina2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
-                            <img src="images/icons/SPR_Icon_PC_Delfina2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
-                            <span
-                                class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Delfina</span>
-                        </a>
-
-                        <a href="characters/delfina-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
-                            <img src="images/icons/SPR_Icon_PC_Delfina_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
-                            <span
-                                class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Delfina</span>
-                        </a>
-
-                        <a href="characters/jacky-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
-                            <img src="images/icons/SPR_Icon_PC_Jacky_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
-                            <span
-                                class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Jacky</span>
-                        </a>
-
-                        <a href="characters/mia-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
-                            <img src="images/icons/SPR_Icon_PC_Mia_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
-                            <span
-                                class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Mia</span>
-                        </a>
-
-                        <a href="characters/nar2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
-                            <img src="images/icons/SPR_Icon_PC_Nar2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
-                            <span
-                                class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Guardian
-                                Nar</span>
-                        </a>
-
-                        <a href="characters/nar-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
-                            <img src="images/icons/SPR_Icon_PC_Nar_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
-                            <span
-                                class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Nar</span>
-                        </a>
-
-                        <a href="characters/natalie2-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
-                            <img src="images/icons/SPR_Icon_PC_Natalie2_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
-                            <span
-                                class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Banshee
-                                Natalie</span>
-                        </a>
-
-                        <a href="characters/natalie-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
-                            <img src="images/icons/SPR_Icon_PC_Natalie_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
-                            <span
-                                class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Natalie</span>
-                        </a>
-
-                        <a href="characters/racel-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
-                            <img src="images/icons/SPR_Icon_PC_Racel_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
-                            <span
-                                class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Rascel</span>
-                        </a>
-
-                        <a href="characters/risky-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
-                            <img src="images/icons/SPR_Icon_PC_Risky_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
-                            <span
-                                class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Risky</span>
-                        </a>
-
-                        <a href="characters/sakura-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
-                            <img src="images/icons/SPR_Icon_PC_Sakura_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
-                            <span
-                                class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Sakura</span>
-                        </a>
-
-                        <a href="characters/selane-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
-                            <img src="images/icons/SPR_Icon_PC_Selane_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
-                            <span
-                                class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Selane</span>
-                        </a>
-
-                        <a href="characters/selva-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
-                            <img src="images/icons/SPR_Icon_PC_Selva_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
-                            <span
-                                class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Selva</span>
-                        </a>
-
-                        <a href="characters/torshe-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
-                            <img src="images/icons/SPR_Icon_PC_Torshe_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
-                            <span
-                                class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Torsche</span>
-                        </a>
-
-                        <a href="characters/winona-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
-                            <img src="images/icons/SPR_Icon_PC_Winona_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
-                            <span
-                                class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Winona</span>
-                        </a>
-
-                        <a href="characters/zaved-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
-                            <img src="images/icons/SPR_Icon_PC_Zaved_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
-                            <span
-                                class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Zaved</span>
-                        </a>
-                    </div>
-                </section>
-                <section>
-                    <h2 class="text-lg font-bold text-gray-500 uppercase tracking-widest mb-4 flex items-center gap-2">
-                        <i class="ph-fill ph-question"></i> Unknown
-                    </h2>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
-
-                        <a href="characters/unknown-01.html"
-                            class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
-                            <img src="images/icons/SPR_Icon_PC_Unknown_01.png"
-                                class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
-                            <span
-                                class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Unknown</span>
-                        </a>
-                    </div>
-                </section>
+                
+        <section>
+            <h2 class="text-lg font-bold text-accent-gold uppercase tracking-widest mb-4 flex items-center gap-2">
+                <i class="ph-fill ph-users-three"></i> Stock Characters
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
+        
+                    <a href="characters/canabel-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Canabel_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Canabel</span>
+                    </a>
+                
+                    <a href="characters/echella-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Echella_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Echella</span>
+                    </a>
+                
+                    <a href="characters/ganazu-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Ganazu_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Ganazu</span>
+                    </a>
+                
+                    <a href="characters/retiff-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Retiff_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Retiff</span>
+                    </a>
+                
+                    <a href="characters/tikanile-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Tikanile_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Tikanile</span>
+                    </a>
+                </div></section>
+        <section>
+            <h2 class="text-lg font-bold text-accent-blue uppercase tracking-widest mb-4 flex items-center gap-2">
+                <i class="ph-fill ph-buildings"></i> Cite Of Reboldouex
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
+        
+                    <a href="characters/andre-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Andre_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Andre</span>
+                    </a>
+                
+                    <a href="characters/angie-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Angie_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Angie</span>
+                    </a>
+                
+                    <a href="characters/panfilo2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Panfilo2_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Battle Cook Panfilo</span>
+                    </a>
+                
+                    <a href="characters/idge2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Idge2_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Battle Smith Idge</span>
+                    </a>
+                
+                    <a href="characters/claude2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Claude2_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Battlefield Claude</span>
+                    </a>
+                
+                    <a href="characters/brunie-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Brunie_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Brunie</span>
+                    </a>
+                
+                    <a href="characters/claude-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Claude_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Claude</span>
+                    </a>
+                
+                    <a href="characters/falso-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Falso_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Falso</span>
+                    </a>
+                
+                    <a href="characters/henik-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Henik_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Henik</span>
+                    </a>
+                
+                    <a href="characters/idge-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Idge_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Idge</span>
+                    </a>
+                
+                    <a href="characters/jack-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Jack_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Jack</span>
+                    </a>
+                
+                    <a href="characters/nix-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Nix_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Nix</span>
+                    </a>
+                
+                    <a href="characters/nolette-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Nolette_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Nolette</span>
+                    </a>
+                
+                    <a href="characters/panfilo-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Panfilo_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Panfilo</span>
+                    </a>
+                
+                    <a href="characters/rakib-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Rakib_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Rakib</span>
+                    </a>
+                
+                    <a href="characters/ramiro-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Ramiro_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Ramiro</span>
+                    </a>
+                
+                    <a href="characters/roizia-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Roizia_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Roizia</span>
+                    </a>
+                
+                    <a href="characters/yeganeh2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Yeganeh2_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Scavenger Yeganeh</span>
+                    </a>
+                
+                    <a href="characters/sharif-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Sharif_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Sharif</span>
+                    </a>
+                
+                    <a href="characters/verita-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Verita_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Verita</span>
+                    </a>
+                
+                    <a href="characters/yeganeh-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Yeganeh_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Yeganeh</span>
+                    </a>
+                </div></section>
+        <section>
+            <h2 class="text-lg font-bold text-accent-blue uppercase tracking-widest mb-4 flex items-center gap-2">
+                <i class="ph-fill ph-anchor"></i> Port Of Coimbra
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
+        
+                    <a href="characters/adelina-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Adelina_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Adelina</span>
+                    </a>
+                
+                    <a href="characters/alejandro-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Alejandro_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Alejandro</span>
+                    </a>
+                
+                    <a href="characters/bane-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Bane_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Bane</span>
+                    </a>
+                
+                    <a href="characters/becky-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Becky_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Becky</span>
+                    </a>
+                
+                    <a href="characters/berneli-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Berneli_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Bernelli</span>
+                    </a>
+                
+                    <a href="characters/calyce-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Calyce_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Calyce</span>
+                    </a>
+                
+                    <a href="characters/cortasar-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Cortasar_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Cortasar</span>
+                    </a>
+                
+                    <a href="characters/emilia-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Emilia_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Emilia</span>
+                    </a>
+                
+                    <a href="characters/gracielo-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Gracielo_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Gracielo</span>
+                    </a>
+                
+                    <a href="characters/irawan-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Irawan_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Irawan</span>
+                    </a>
+                
+                    <a href="characters/lisa-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Lisa_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Lisa</span>
+                    </a>
+                
+                    <a href="characters/loretta-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Loretta_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Loreta</span>
+                    </a>
+                
+                    <a href="characters/mboma-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Mboma_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Mboma</span>
+                    </a>
+                
+                    <a href="characters/calyce2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Calyce2_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Mercenary Calyce</span>
+                    </a>
+                
+                    <a href="characters/adelina2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Adelina2_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Pirate Adelina</span>
+                    </a>
+                
+                    <a href="characters/emilia3-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Emilia3_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Reckless Emilia</span>
+                    </a>
+                
+                    <a href="characters/roht-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Roht_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Roht</span>
+                    </a>
+                
+                    <a href="characters/emilia2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Emilia2_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Sage Emilia</span>
+                    </a>
+                
+                    <a href="characters/berneli2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Berneli2_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Sniper Bernelli</span>
+                    </a>
+                
+                    <a href="characters/soho-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Soho_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Soho</span>
+                    </a>
+                
+                    <a href="characters/soho2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Soho2_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Soho the Wind</span>
+                    </a>
+                
+                    <a href="characters/vanessa-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Vanessa_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Vanessa</span>
+                    </a>
+                
+                    <a href="characters/vinar-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Vinar_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Vinar</span>
+                    </a>
+                </div></section>
+        <section>
+            <h2 class="text-lg font-bold text-accent-blue uppercase tracking-widest mb-4 flex items-center gap-2">
+                <i class="ph-fill ph-city"></i> City of Auch
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
+        
+                    <a href="characters/backho-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Backho_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Baek Ho</span>
+                    </a>
+                
+                    <a href="characters/bianca-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Bianca_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Bianca</span>
+                    </a>
+                
+                    <a href="characters/clair2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Clair2_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Cannon Shooter Claire</span>
+                    </a>
+                
+                    <a href="characters/catherine-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Catherine_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Catherine</span>
+                    </a>
+                
+                    <a href="characters/catherine2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Catherine2_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Catherine Torsche</span>
+                    </a>
+                
+                    <a href="characters/clair-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Clair_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Claire</span>
+                    </a>
+                
+                    <a href="characters/rio2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Rio2_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Conductor Rio</span>
+                    </a>
+                
+                    <a href="characters/clair3-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Clair3_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Cutie Claire</span>
+                    </a>
+                
+                    <a href="characters/karjalainen2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Karjalainen2_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Designer Karjalainen</span>
+                    </a>
+                
+                    <a href="characters/giltine-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Giltine_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Giltine</span>
+                    </a>
+                
+                    <a href="characters/gurtrude-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Gurtrude_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Gurtrude</span>
+                    </a>
+                
+                    <a href="characters/hellena-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Hellena_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Hellena</span>
+                    </a>
+                
+                    <a href="characters/jaina-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Jaina_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Jaina</span>
+                    </a>
+                
+                    <a href="characters/jane-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Jane_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Jane</span>
+                    </a>
+                
+                    <a href="characters/karjalainen-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Karjalainen_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Karjalainen</span>
+                    </a>
+                
+                    <a href="characters/keuen-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Keuen_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Keuen</span>
+                    </a>
+                
+                    <a href="characters/lorch-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Lorch_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Lorch</span>
+                    </a>
+                
+                    <a href="characters/mary-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Mary_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Mary</span>
+                    </a>
+                
+                    <a href="characters/lorch2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Lorch2_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Meister Lorch</span>
+                    </a>
+                
+                    <a href="characters/rio-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Rio_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Rio</span>
+                    </a>
+                
+                    <a href="characters/tiburon-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Tiburon_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Tiburon</span>
+                    </a>
+                
+                    <a href="characters/trina-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Trina_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Trina</span>
+                    </a>
+                
+                    <a href="characters/valleria2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Valleria2_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Valeria Vendetta</span>
+                    </a>
+                
+                    <a href="characters/valleria-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Valleria_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Valleria</span>
+                    </a>
+                
+                    <a href="characters/viki-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Viki_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Viki</span>
+                    </a>
+                </div></section>
+        <section>
+            <h2 class="text-lg font-bold text-accent-blue uppercase tracking-widest mb-4 flex items-center gap-2">
+                <i class="ph-fill ph-tree-palm"></i> Ustiur
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
+        
+                    <a href="characters/chungha-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Chungha_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Chungha</span>
+                    </a>
+                
+                    <a href="characters/elizabeth-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Elizabeth_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Elizabeth</span>
+                    </a>
+                
+                    <a href="characters/grandma-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Grandma_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Grenmah</span>
+                    </a>
+                
+                    <a href="characters/ivy-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Ivy_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Ivy</span>
+                    </a>
+                
+                    <a href="characters/marcelino-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Marcelino_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Marcelino</span>
+                    </a>
+                
+                    <a href="characters/miha-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Miha_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Miha</span>
+                    </a>
+                
+                    <a href="characters/miho-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Miho_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Miho</span>
+                    </a>
+                
+                    <a href="characters/grandma2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Grandma2_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">P. Queen Grenmah</span>
+                    </a>
+                
+                    <a href="characters/ouchsoldier-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Ouchsoldier_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Rescue Knight</span>
+                    </a>
+                
+                    <a href="characters/romina2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Romina2_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Rescue Officer Romina</span>
+                    </a>
+                
+                    <a href="characters/romina-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Romina_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Romina</span>
+                    </a>
+                
+                    <a href="characters/serth-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Serth_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Serth</span>
+                    </a>
+                
+                    <a href="characters/ania-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Ania_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Wanida</span>
+                    </a>
+                </div></section>
+        <section>
+            <h2 class="text-lg font-bold text-accent-blue uppercase tracking-widest mb-4 flex items-center gap-2">
+                <i class="ph-fill ph-plant"></i> Bahamar
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
+        
+                    <a href="characters/asoka-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Asoka_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Asoka</span>
+                    </a>
+                
+                    <a href="characters/jin-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Jin_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Jin</span>
+                    </a>
+                
+                    <a href="characters/laval-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Laval_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Laval</span>
+                    </a>
+                
+                    <a href="characters/nena-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Nena_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Nena</span>
+                    </a>
+                
+                    <a href="characters/psyche-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Psyche_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Psyche</span>
+                    </a>
+                
+                    <a href="characters/sharon2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Sharon2_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Sage Sharon</span>
+                    </a>
+                
+                    <a href="characters/seolhwa-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Seolhwa_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Seolhwa</span>
+                    </a>
+                
+                    <a href="characters/sharon-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Sharon_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Sharon</span>
+                    </a>
+                
+                    <a href="characters/sierra-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Sierra_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Sierra</span>
+                    </a>
+                </div></section>
+        <section>
+            <h2 class="text-lg font-bold text-accent-blue uppercase tracking-widest mb-4 flex items-center gap-2">
+                <i class="ph-fill ph-skull"></i> Los Toldos
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
+        
+                    <a href="characters/eduardo-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Eduardo_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Edward</span>
+                    </a>
+                
+                    <a href="characters/kurt-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Kurt_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Kurt</span>
+                    </a>
+                </div></section>
+        <section>
+            <h2 class="text-lg font-bold text-accent-blue uppercase tracking-widest mb-4 flex items-center gap-2">
+                <i class="ph-fill ph-snowflake"></i> Katovic
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
+        
+                    <a href="characters/natalie2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Natalie2_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Banshee Natalie</span>
+                    </a>
+                
+                    <a href="characters/ganazu2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Ganazu2_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Cold Hearted Ganuzu</span>
+                    </a>
+                
+                    <a href="characters/garcia-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Garcia_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Garcia</span>
+                    </a>
+                
+                    <a href="characters/mertis-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Mertis_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Mertis</span>
+                    </a>
+                
+                    <a href="characters/natalie-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Natalie_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Natalie</span>
+                    </a>
+                
+                    <a href="characters/selane-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Selane_01.png" class="w-16 h-16 rounded-lg border-2 border-recruit group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Selane</span>
+                    </a>
+                
+                    <a href="characters/selva-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center ">
+                        <img src="images/icons/SPR_Icon_PC_Selva_01.png" class="w-16 h-16 rounded-lg border-2 border-stock group-hover:scale-110 transition-transform">
+                        <span class="text-xs font-semibold text-gray-300 group-hover:text-white truncate w-full">Selva Norte</span>
+                    </a>
+                </div></section>
+        <section>
+            <h2 class="text-lg font-bold text-accent-red uppercase tracking-widest mb-4 flex items-center gap-2">
+                <i class="ph-fill ph-lock-key"></i> Unreleased
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
+        
+                    <a href="characters/delfina2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Delfina2_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Delfina</span>
+                    </a>
+                
+                    <a href="characters/delfina-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Delfina_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Delfina</span>
+                    </a>
+                
+                    <a href="characters/friede-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Friede_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Friede</span>
+                    </a>
+                
+                    <a href="characters/ania2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Ania2_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Guardian Ania</span>
+                    </a>
+                
+                    <a href="characters/nar2-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Nar2_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Guardian Nar</span>
+                    </a>
+                
+                    <a href="characters/jacky-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Jacky_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Jacky</span>
+                    </a>
+                
+                    <a href="characters/kane-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Kane_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Kane</span>
+                    </a>
+                
+                    <a href="characters/kiss-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Kiss_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Kiss</span>
+                    </a>
+                
+                    <a href="characters/ludin-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Ludin_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Ludin</span>
+                    </a>
+                
+                    <a href="characters/lyndon-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Lyndon_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Lyndon</span>
+                    </a>
+                
+                    <a href="characters/mia-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Mia_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Mia</span>
+                    </a>
+                
+                    <a href="characters/nar-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Nar_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Nar</span>
+                    </a>
+                
+                    <a href="characters/ralph-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Ralph_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Ralph</span>
+                    </a>
+                
+                    <a href="characters/racel-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Racel_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Rascel</span>
+                    </a>
+                
+                    <a href="characters/risky-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Risky_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Risky</span>
+                    </a>
+                
+                    <a href="characters/rosa-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Rosa_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Rosa</span>
+                    </a>
+                
+                    <a href="characters/sakura-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Sakura_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Sakura</span>
+                    </a>
+                
+                    <a href="characters/sherry-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Sherry_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Sherry</span>
+                    </a>
+                
+                    <a href="characters/sorang-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Sorang_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Sorang</span>
+                    </a>
+                
+                    <a href="characters/soso-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Soso_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Soso</span>
+                    </a>
+                
+                    <a href="characters/torshe-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Torshe_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Torsche</span>
+                    </a>
+                
+                    <a href="characters/unknown-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Unknown_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Unknown</span>
+                    </a>
+                
+                    <a href="characters/winona-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Winona_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Winona</span>
+                    </a>
+                
+                    <a href="characters/zaved-01.html" class="glass-card p-3 rounded-xl flex flex-col items-center gap-3 group text-center opacity-70 hover:opacity-100">
+                        <img src="images/icons/SPR_Icon_PC_Zaved_01.png" class="w-16 h-16 rounded-lg border-2 border-stock grayscale group-hover:grayscale-0 transition-all">
+                        <span class="text-xs font-semibold text-gray-400 group-hover:text-white truncate w-full">Zaved</span>
+                    </a>
+                </div></section>
             </div>
         </div>
     </div>
@@ -1283,5 +821,4 @@
         });
     </script>
 </body>
-
 </html>
