@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rajdhani:wght@600;700&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    
+
     <!-- Tailwind Config for Custom Colors -->
     <script>
         tailwind.config = {
@@ -55,7 +58,10 @@
         body::before {
             content: '';
             position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background: linear-gradient(to bottom, rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.7));
             z-index: -1;
         }
@@ -68,7 +74,7 @@
             border: 1px solid rgba(255, 255, 255, 0.08);
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
         }
-        
+
         .glass-card {
             background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
             backdrop-filter: blur(12px);
@@ -99,15 +105,25 @@
             width: 40px;
             height: 20px;
         }
-        .switch input { opacity: 0; width: 0; height: 0; }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
         .slider {
             position: absolute;
             cursor: pointer;
-            top: 0; left: 0; right: 0; bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background-color: rgba(255, 255, 255, 0.1);
             transition: .4s;
             border-radius: 34px;
         }
+
         .slider:before {
             position: absolute;
             content: "";
@@ -119,47 +135,89 @@
             transition: .4s;
             border-radius: 50%;
         }
-        input:checked + .slider { background-color: #38bdf8; }
-        input:checked + .slider:before { transform: translateX(20px); }
+
+        input:checked+.slider {
+            background-color: #38bdf8;
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(20px);
+        }
 
         /* Timer Digits */
         .digit-box {
             background: rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255,255,255,0.05);
-            box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         /* Status Animations */
         .status-dot {
-            width: 8px; height: 8px;
+            width: 8px;
+            height: 8px;
             border-radius: 50%;
             display: inline-block;
         }
-        .status-online { background-color: #4ade80; box-shadow: 0 0 10px #4ade80; }
-        .status-offline { background-color: #f87171; box-shadow: 0 0 10px #f87171; }
-        .status-checking { background-color: #fbbf24; animation: pulse 1.5s infinite; }
-        
+
+        .status-online {
+            background-color: #4ade80;
+            box-shadow: 0 0 10px #4ade80;
+        }
+
+        .status-offline {
+            background-color: #f87171;
+            box-shadow: 0 0 10px #f87171;
+        }
+
+        .status-checking {
+            background-color: #fbbf24;
+            animation: pulse 1.5s infinite;
+        }
+
         @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.4; }
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.4;
+            }
         }
 
         /* Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: rgba(0,0,0,0.1); }
-        ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
     </style>
 </head>
+
 <body class="antialiased p-4 sm:p-6">
 
     <div class="max-w-[1600px] mx-auto">
-        
+
         <!-- Navbar / Header -->
-        <header class="flex flex-col md:flex-row items-center justify-between gap-6 mb-8 glass-panel rounded-2xl p-4 md:px-8">
+        <header
+            class="flex flex-col md:flex-row items-center justify-between gap-6 mb-8 glass-panel rounded-2xl p-4 md:px-8">
             <!-- Logo Section -->
             <div class="flex items-center gap-4">
-                <img src="https://gem.playpark.com/wp-content/uploads/2024/11/1-gem-logo.png" alt="Granado Espada M" class="h-16 object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]" onerror="this.onerror=null;this.src='https://i.imgur.com/kSTiS9s.png';">
+                <img src="https://gem.playpark.com/wp-content/uploads/2024/11/1-gem-logo.png" alt="Granado Espada M"
+                    class="h-16 object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]"
+                    onerror="this.onerror=null;this.src='https://i.imgur.com/kSTiS9s.png';">
                 <div class="hidden sm:block border-l border-white/10 pl-4">
                     <h1 class="text-xl font-bold text-white tracking-wide">UNOFFICIAL TRACKER</h1>
                     <p class="text-xs text-accent-blue font-medium tracking-wider uppercase">Live Timer & Status</p>
@@ -173,10 +231,12 @@
         </header>
 
         <!-- Global Controls Bar -->
-        <div class="flex flex-wrap justify-center md:justify-between items-center gap-4 mb-8 glass-panel rounded-xl p-3">
+        <div
+            class="flex flex-wrap justify-center md:justify-between items-center gap-4 mb-8 glass-panel rounded-xl p-3">
             <div class="flex items-center gap-6 px-4">
                 <!-- Notifications Toggle -->
-                <button id="notifications-btn" class="flex items-center gap-2 text-sm font-medium transition-colors hover:text-white group">
+                <button id="notifications-btn"
+                    class="flex items-center gap-2 text-sm font-medium transition-colors hover:text-white group">
                     <div class="p-1.5 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors">
                         <i class="ph-duotone ph-bell-ringing text-lg"></i>
                     </div>
@@ -186,7 +246,8 @@
                 <!-- Audio Duration -->
                 <div class="flex items-center gap-2 text-sm font-medium text-gray-400">
                     <i class="ph-duotone ph-speaker-high text-lg"></i>
-                    <select id="sound-duration" class="bg-black/20 border border-white/10 rounded-lg px-2 py-1 text-xs text-white focus:outline-none focus:border-accent-blue transition-colors custom-select pr-8">
+                    <select id="sound-duration"
+                        class="bg-black/20 border border-white/10 rounded-lg px-2 py-1 text-xs text-white focus:outline-none focus:border-accent-blue transition-colors custom-select pr-8">
                         <option value="5">Short (5s)</option>
                         <option value="15" selected>Medium (15s)</option>
                         <option value="30">Long (30s)</option>
@@ -195,10 +256,12 @@
             </div>
 
             <div class="flex items-center gap-3 px-2">
-                <button id="swap-wallpaper-btn" class="flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/5 text-gray-200 px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wide transition-all">
+                <button id="swap-wallpaper-btn"
+                    class="flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/5 text-gray-200 px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wide transition-all">
                     <i class="ph-duotone ph-image"></i> Wallpaper
                 </button>
-                <a href="https://freischultz.github.io/unofficial_gem/wiki.html" class="flex items-center gap-2 bg-accent-blue/10 hover:bg-accent-blue/20 border border-accent-blue/20 text-accent-blue px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wide transition-all">
+                <a href="https://freischultz.github.io/unofficial_gem/wiki.html"
+                    class="flex items-center gap-2 bg-accent-blue/10 hover:bg-accent-blue/20 border border-accent-blue/20 text-accent-blue px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wide transition-all">
                     <i class="ph-duotone ph-book-open-text"></i> Wiki
                 </a>
             </div>
@@ -206,18 +269,25 @@
 
         <!-- Main Grid -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-            
+
             <!-- Left Sidebar (3 Cols) -->
             <div class="lg:col-span-3 space-y-6">
-                
+
                 <!-- Patch Notes Highlight -->
                 <div class="glass-card rounded-xl overflow-hidden group relative">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10 pointer-events-none"></div>
-                    <img src="https://gem.playpark.com/wp-content/uploads/2025/11/GEM-18-Nov-2025-Patchnotes.png" alt="Patch Notes" class="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10 pointer-events-none">
+                    </div>
+                    <img src="https://gem.playpark.com/wp-content/uploads/2025/11/GEM-18-Nov-2025-Patchnotes.png"
+                        alt="Patch Notes"
+                        class="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute bottom-0 left-0 right-0 p-4 z-20">
-                        <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-accent-blue text-black mb-2">UPDATE</span>
+                        <span
+                            class="inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-accent-blue text-black mb-2">UPDATE</span>
                         <h3 class="text-lg font-bold text-white leading-tight mb-1">Katovic Update</h3>
-                        <a href="https://gem.playpark.com/en-sea/gem-patch-updates-18-november-2025-katovik-update/" target="_blank" class="text-xs text-gray-300 hover:text-white flex items-center gap-1 transition-colors">
+                        <a href="https://gem.playpark.com/en-sea/gem-patch-updates-18-november-2025-katovik-update/"
+                            target="_blank"
+                            class="text-xs text-gray-300 hover:text-white flex items-center gap-1 transition-colors">
                             Read Patch Notes <i class="ph-bold ph-arrow-right"></i>
                         </a>
                     </div>
@@ -233,8 +303,8 @@
                     </div>
                 </div>
 
-                 <!-- Audio Config -->
-                 <div class="glass-card rounded-xl p-5">
+                <!-- Audio Config -->
+                <div class="glass-card rounded-xl p-5">
                     <h2 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4 flex items-center gap-2">
                         <i class="ph-duotone ph-sliders-horizontal text-accent-blue"></i> Alert Config
                     </h2>
@@ -253,10 +323,12 @@
         </div>
 
         <footer class="text-center mt-12 mb-6">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/30 border border-white/5 text-xs text-gray-500">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/30 border border-white/5 text-xs text-gray-500">
                 <span class="relative flex h-2 w-2">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                 </span>
                 System Synchronized
             </div>
@@ -276,7 +348,7 @@
                 'https://gem.hanbiton.com/Brand2E/src/images/media/gallery-image-03-01.jpg'
             ];
             let currentBgIndex = 0;
-            
+
             function setBackground(index) {
                 // Use a high-quality overlay approach
                 document.body.style.backgroundImage = `url(${backgrounds[index]})`;
@@ -295,7 +367,8 @@
                 { id: 'coimbra', name: 'Coimbra', full_name: 'Coimbra Hunt', icon: '<i class="ph-duotone ph-lightning"></i>', color: 'text-yellow-400', bg: 'bg-yellow-500/10', respawnInterval: 10 * 60 * 60 * 1000 },
                 { id: 'auch', name: 'Auch', full_name: 'Auch Hunt', icon: '<i class="ph-duotone ph-crown"></i>', color: 'text-purple-400', bg: 'bg-purple-500/10', respawnInterval: 21 * 60 * 60 * 1000 },
                 { id: 'los-toldos', name: 'Los Toldos', full_name: 'Los Toldos', icon: '<i class="ph-duotone ph-cactus"></i>', color: 'text-green-400', bg: 'bg-green-500/10', respawnInterval: 21 * 60 * 60 * 1000 },
-                { id: 'ustiur', name: 'Ustiur', full_name: 'Ustiur Map', icon: '<i class="ph-duotone ph-volcano"></i>', color: 'text-orange-400', bg: 'bg-orange-500/10', respawnInterval: 21 * 60 * 60 * 1000 }
+                { id: 'ustiur', name: 'Ustiur', full_name: 'Ustiur Map', icon: '<i class="ph-duotone ph-tree-palm"></i>', color: 'text-orange-400', bg: 'bg-orange-500/10', respawnInterval: 21 * 60 * 60 * 1000 },
+                { id: 'katovic', name: 'Katovic', full_name: 'Katovic Snowfield', icon: '<i class="ph-duotone ph-snowflake"></i>', color: 'text-cyan-400', bg: 'bg-cyan-500/10', respawnInterval: 21 * 60 * 60 * 1000 }
             ];
             const servers = [
                 { id: 'felipe', name: 'Felipe', ip: '121.52.205.22', port: 31001 },
@@ -304,7 +377,7 @@
             const dailyResets = [
                 { id: 'trade', name: 'Trade & Market' }, { id: 'mission', name: 'Daily Missions' }, { id: 'dungeon', name: 'Bounty Hunter' }, { id: 'cash-shop', name: 'Cash Shop Deals' }
             ];
-            const weeklyResets = [ { id: 'raid', name: 'Raid Admission (x4)' } ];
+            const weeklyResets = [{ id: 'raid', name: 'Raid Admission (x4)' }];
             const soundStyles = {
                 classic: { name: 'Classic', synth: new Tone.Synth({ oscillator: { type: 'sine' } }).toDestination() },
                 electric: { name: 'Electric', synth: new Tone.FMSynth({ oscillator: { type: 'sawtooth' } }).toDestination() },
@@ -333,14 +406,14 @@
                         let nextRespawn;
                         if (boss.id === 'coimbra') {
                             const spawnTime = new Date();
-                            spawnTime.setHours(14, 0, 0, 0); 
+                            spawnTime.setHours(14, 0, 0, 0);
                             nextRespawn = spawnTime.getTime();
-                        } else if (['auch', 'los-toldos', 'ustiur'].includes(boss.id)) {
+                        } else if (['auch', 'los-toldos', 'ustiur', 'katovic'].includes(boss.id)) {
                             const spawnTime = new Date();
-                            spawnTime.setDate(spawnTime.getDate() + 1); 
-                            spawnTime.setHours(3, 0, 0, 0); 
+                            spawnTime.setDate(spawnTime.getDate() + 1);
+                            spawnTime.setHours(3, 0, 0, 0);
                             nextRespawn = spawnTime.getTime();
-                        } else { 
+                        } else {
                             nextRespawn = Math.ceil(now / boss.respawnInterval) * boss.respawnInterval;
                         }
                         state.bosses[boss.id] = { warningTime: 5 * 60 * 1000, soundStyle: 'classic', muted: false, nextRespawn: nextRespawn };
@@ -366,7 +439,7 @@
                 const timersContainer = document.getElementById('boss-timers-container');
                 const resetsContainer = document.getElementById('resets-container');
                 const serverStatusContainer = document.getElementById('server-status-container');
-                
+
                 settingsContainer.innerHTML = '';
                 timersContainer.innerHTML = '';
                 resetsContainer.innerHTML = '';
@@ -375,7 +448,7 @@
                 // 1. Render Boss Timers
                 bosses.forEach(boss => {
                     const bossState = state.bosses[boss.id];
-                    
+
                     const timerCard = document.createElement('div');
                     timerCard.className = 'glass-card rounded-xl p-6 flex flex-col relative overflow-hidden group';
                     timerCard.innerHTML = `
@@ -452,7 +525,7 @@
                         </div>
                     `;
                     settingsContainer.appendChild(settingsRow);
-                    
+
                     // Set init values
                     document.getElementById(`warning-time-${boss.id}`).value = bossState.warningTime;
                     document.getElementById(`sound-style-${boss.id}`).value = bossState.soundStyle;
@@ -517,7 +590,7 @@
                     updateAllNotificationSummaries();
                 });
                 document.getElementById('swap-wallpaper-btn').addEventListener('click', swapWallpaper);
-                
+
                 document.querySelectorAll('.warning-time-select').forEach(select => {
                     select.addEventListener('change', (e) => {
                         const bossId = e.target.dataset.id;
@@ -556,7 +629,7 @@
                 bosses.forEach(boss => {
                     let bossState = state.bosses[boss.id];
                     let nextRespawnTime = bossState.nextRespawn;
-                    
+
                     // Rollover logic
                     if (now >= nextRespawnTime) {
                         while (nextRespawnTime < now) { nextRespawnTime += boss.respawnInterval; }
@@ -568,7 +641,7 @@
                     const hours = Math.floor(timeLeft / 3600000);
                     const minutes = Math.floor((timeLeft % 3600000) / 60000);
                     const seconds = Math.floor((timeLeft % 60000) / 1000);
-                    
+
                     // Update Digits
                     document.getElementById(`hours-${boss.id}`).textContent = String(hours).padStart(2, '0');
                     document.getElementById(`minutes-${boss.id}`).textContent = String(minutes).padStart(2, '0');
@@ -583,19 +656,19 @@
                     if (nextReadyDate.getDate() === today.getDate()) dayString = 'Today';
                     else if (nextReadyDate.getDate() === tomorrow.getDate()) dayString = 'Tmrw';
                     else dayString = nextReadyDate.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
-                    
+
                     document.getElementById(`next-ready-${boss.id}`).textContent = `${dayString} @ ${nextReadyDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`;
 
                     // Status Dot & Notifications
                     const activeDot = document.getElementById(`active-dot-${boss.id}`);
-                    
+
                     if (!bossState.muted && !notifiedFor[boss.id] && timeLeft <= bossState.warningTime && timeLeft > bossState.warningTime - 1000) {
                         triggerNotification(boss);
                         notifiedFor[boss.id] = true;
                     }
-                    
-                    if (timeLeft > bossState.warningTime) { 
-                        notifiedFor[boss.id] = false; 
+
+                    if (timeLeft > bossState.warningTime) {
+                        notifiedFor[boss.id] = false;
                         activeDot.className = 'h-2 w-2 rounded-full bg-gray-600'; // Idle
                     } else {
                         activeDot.className = 'h-2 w-2 rounded-full bg-accent-gold animate-pulse'; // Warning zone
@@ -605,8 +678,8 @@
 
             function updateResetTimers() {
                 const now = new Date();
-                const resetHourUTC = 20; 
-                
+                const resetHourUTC = 20;
+
                 // Daily
                 let nextDailyReset = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), resetHourUTC, 0, 0, 0));
                 if (now.getTime() >= nextDailyReset.getTime()) {
@@ -614,13 +687,13 @@
                 }
                 document.getElementById('daily-reset-timer').textContent = formatTimeLeft(nextDailyReset.getTime() - now.getTime());
                 document.getElementById('daily-reset-time').textContent = nextDailyReset.toLocaleString([], { weekday: 'short', hour: '2-digit', minute: '2-digit' });
-                
+
                 // Weekly
                 let nextWeeklyReset = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), resetHourUTC, 0, 0, 0));
                 const currentUTCDay = now.getUTCDay();
                 const daysUntilMonday = (1 - currentUTCDay + 7) % 7;
                 nextWeeklyReset.setUTCDate(nextWeeklyReset.getUTCDate() + daysUntilMonday);
-                 if (daysUntilMonday === 0 && now.getTime() >= nextWeeklyReset.getTime()) {
+                if (daysUntilMonday === 0 && now.getTime() >= nextWeeklyReset.getTime()) {
                     nextWeeklyReset.setUTCDate(nextWeeklyReset.getUTCDate() + 7);
                 }
                 document.getElementById('weekly-reset-timer').textContent = formatTimeLeft(nextWeeklyReset.getTime() - now.getTime());
@@ -630,7 +703,7 @@
             async function pingServer(server) {
                 const dot = document.getElementById(`status-dot-${server.id}`);
                 const text = document.getElementById(`status-text-${server.id}`);
-                
+
                 const controller = new AbortController();
                 const timeoutId = setTimeout(() => controller.abort(), 5000);
 
@@ -642,9 +715,9 @@
                     text.className = 'text-[10px] text-accent-green uppercase font-bold';
                 } catch (e) {
                     if (e.name === 'AbortError') {
-                         dot.className = 'status-dot status-offline';
-                         text.textContent = 'Timeout';
-                         text.className = 'text-[10px] text-accent-red uppercase font-bold';
+                        dot.className = 'status-dot status-offline';
+                        text.textContent = 'Timeout';
+                        text.className = 'text-[10px] text-accent-red uppercase font-bold';
                     } else if (e instanceof TypeError) {
                         // CORS error usually means server is up but rejecting browser origin
                         dot.className = 'status-dot status-online';
@@ -680,14 +753,14 @@
                 const bossState = state.bosses[bossId]; // Fixed access
                 const synth = soundStyles[bossState.soundStyle].synth;
                 const duration = state.soundDuration;
-                
+
                 if (type === 'warning') {
                     if (bossState.soundStyle === 'roar') synth.triggerAttackRelease("8n", duration);
                     else {
                         const now = Tone.now();
                         synth.triggerAttackRelease('C4', '8n', now);
                         synth.triggerAttackRelease('G4', '8n', now + 0.5);
-                        if(duration > 5) synth.triggerAttackRelease('C5', '8n', now + 1.0);
+                        if (duration > 5) synth.triggerAttackRelease('C5', '8n', now + 1.0);
                     }
                 }
             }
@@ -727,7 +800,7 @@
                 const btn = document.getElementById('notifications-btn');
                 const text = document.getElementById('notif-text');
                 const icon = btn.querySelector('i');
-                
+
                 if (state.notificationsEnabled) {
                     text.textContent = 'Alerts On';
                     text.className = 'text-accent-green';
@@ -780,4 +853,5 @@
         });
     </script>
 </body>
+
 </html>
