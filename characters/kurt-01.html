@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granado Espada M - Kurt</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-size: cover;
+            background-position: center 20%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(26, 27, 38, 0.85);
+            backdrop-filter: blur(4px);
+            z-index: -1;
+        }
+        .card {
+            background: linear-gradient(to bottom, rgba(92, 149, 196, 0.75), rgba(60, 123, 169, 0.75));
+            border: 1px solid rgba(110, 156, 196, 0.6);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+        }
+    </style>
+</head>
+<body class="text-gray-200 p-4 sm:p-6 md:p-8">
+    <div class="max-w-4xl mx-auto">
+        <header class="text-center mb-6">
+            <img src="https://gem.playpark.com/wp-content/uploads/2024/11/1-gem-logo.png" alt="Granado Espada M Logo" class="mx-auto h-24" onerror="this.onerror=null;this.src='https://i.imgur.com/kSTiS9s.png';">
+        </header>
+        <div class="text-center mb-8">
+            <a href="../wiki.html" class="inline-flex items-center gap-2 bg-gray-700/50 hover:bg-gray-600/50 text-white px-4 py-2 rounded-md text-sm font-semibold transition">
+                <i class="ph ph-arrow-left"></i>
+                Back to Wiki
+            </a>
+        </div>
+        <div class="card p-8">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <img src="../images/portrait/IMG_Portrait_PC_Kurt_01.png" alt="Kurt" class="w-56 h-auto rounded-lg border-4 border-amber-300">
+                <div>
+                    <h1 class="text-4xl font-bold text-white">Kurt</h1>
+                    <p class="text-amber-300 text-lg mt-1">Character Details</p>
+                    <p class="text-gray-300 mt-4">
+                        Detailed information about Kurt, including stats, stances, and recruitment quests, will be available here soon.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const backgrounds = ['https://gem.hanbiton.com/Brand2E/src/images/new-contents/event/bg.jpg'];
+            document.body.style.backgroundImage = `url(${backgrounds[0]})`;
+        });
+    </script>
+</body>
+</html>
