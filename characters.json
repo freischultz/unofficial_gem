@@ -1,0 +1,814 @@
+{
+    "spr-icon-pc-adelina2-01": {
+        "name": "Pirate Adelina",
+        "icon": "SPR_Icon_PC_Adelina2_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": true
+    },
+    "spr-icon-pc-adelina-01": {
+        "name": "Adelina",
+        "icon": "SPR_Icon_PC_Adelina_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": false
+    },
+    "spr-icon-pc-alejandro-01": {
+        "name": "Alejandro",
+        "icon": "SPR_Icon_PC_Alejandro_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": false
+    },
+    "spr-icon-pc-andre-01": {
+        "name": "Andre",
+        "icon": "SPR_Icon_PC_Andre_01.png",
+        "group": "Cite Of Reboldouex",
+        "is_rare": false
+    },
+    "spr-icon-pc-angie-01": {
+        "name": "Angie",
+        "icon": "SPR_Icon_PC_Angie_01.png",
+        "group": "Cite Of Reboldouex",
+        "is_rare": false
+    },
+    "spr-icon-pc-ania2-01": {
+        "name": "Guardian Ania",
+        "icon": "SPR_Icon_PC_Ania2_01.png",
+        "group": "Unreleased",
+        "is_rare": true
+    },
+    "spr-icon-pc-ania-01": {
+        "name": "Ania",
+        "icon": "SPR_Icon_PC_Ania_01.png",
+        "group": "Unreleased",
+        "is_rare": false
+    },
+    "spr-icon-pc-asoka-01": {
+        "name": "Asoka",
+        "icon": "SPR_Icon_PC_Asoka_01.png",
+        "group": "Unreleased",
+        "is_rare": false
+    },
+    "spr-icon-pc-backho-01": {
+        "name": "Backho",
+        "icon": "SPR_Icon_PC_Backho_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-bane-01": {
+        "name": "Bane",
+        "icon": "SPR_Icon_PC_Bane_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": false
+    },
+    "spr-icon-pc-becky-01": {
+        "name": "Becky",
+        "icon": "SPR_Icon_PC_Becky_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": false
+    },
+    "spr-icon-pc-berneli2-01": {
+        "name": "Sniper Berneli",
+        "icon": "SPR_Icon_PC_Berneli2_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": true
+    },
+    "spr-icon-pc-berneli-01": {
+        "name": "Berneli",
+        "icon": "SPR_Icon_PC_Berneli_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": false
+    },
+    "spr-icon-pc-bianca-01": {
+        "name": "Bianca",
+        "icon": "SPR_Icon_PC_Bianca_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-brunie-01": {
+        "name": "Brunie",
+        "icon": "SPR_Icon_PC_Brunie_01.png",
+        "group": "Cite Of Reboldouex",
+        "is_rare": false
+    },
+    "spr-icon-pc-calyce2-01": {
+        "name": "Mercenary Calyce",
+        "icon": "SPR_Icon_PC_Calyce2_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": true
+    },
+    "spr-icon-pc-calyce-01": {
+        "name": "Calyce",
+        "icon": "SPR_Icon_PC_Calyce_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": false
+    },
+    "spr-icon-pc-canabel-01": {
+        "name": "Canabel",
+        "icon": "SPR_Icon_PC_Canabel_01.png",
+        "group": "Stock Characters",
+        "is_rare": false,
+        "classification": "Stock",
+        "sort_order": 1
+    },
+    "spr-icon-pc-catherine2-01": {
+        "name": "Catherine Torsche",
+        "icon": "SPR_Icon_PC_Catherine2_01.png",
+        "group": "City of Auch",
+        "is_rare": true
+    },
+    "spr-icon-pc-catherine-01": {
+        "name": "Catherine",
+        "icon": "SPR_Icon_PC_Catherine_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-chungha-01": {
+        "name": "Chungha",
+        "icon": "SPR_Icon_PC_Chungha_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-clair2-01": {
+        "name": "Cannon Shooter Claire",
+        "icon": "SPR_Icon_PC_Clair2_01.png",
+        "group": "City of Auch",
+        "is_rare": true
+    },
+    "spr-icon-pc-clair3-01": {
+        "name": "Cutie Claire",
+        "icon": "SPR_Icon_PC_Clair3_01.png",
+        "group": "City of Auch",
+        "is_rare": true
+    },
+    "spr-icon-pc-clair-01": {
+        "name": "Claire",
+        "icon": "SPR_Icon_PC_Clair_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-claude2-01": {
+        "name": "Battlefield Claude",
+        "icon": "SPR_Icon_PC_Claude2_01.png",
+        "group": "Cite Of Reboldouex",
+        "is_rare": true
+    },
+    "spr-icon-pc-claude-01": {
+        "name": "Claude",
+        "icon": "SPR_Icon_PC_Claude_01.png",
+        "group": "Cite Of Reboldouex",
+        "is_rare": false
+    },
+    "spr-icon-pc-cortasar-01": {
+        "name": "Cortasar",
+        "icon": "SPR_Icon_PC_Cortasar_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": false
+    },
+    "spr-icon-pc-delfina2-01": {
+        "name": "Delfina",
+        "icon": "SPR_Icon_PC_Delfina2_01.png",
+        "group": "Unreleased",
+        "is_rare": true
+    },
+    "spr-icon-pc-delfina-01": {
+        "name": "Delfina",
+        "icon": "SPR_Icon_PC_Delfina_01.png",
+        "group": "Unreleased",
+        "is_rare": false
+    },
+    "spr-icon-pc-echella-01": {
+        "name": "Echella",
+        "icon": "SPR_Icon_PC_Echella_01.png",
+        "group": "Stock Characters",
+        "is_rare": false,
+        "sort_order": 2
+    },
+    "spr-icon-pc-eduardo-01": {
+        "name": "Eduardo",
+        "icon": "SPR_Icon_PC_Eduardo_01.png",
+        "group": "Los Toldos",
+        "is_rare": false
+    },
+    "spr-icon-pc-elizabeth-01": {
+        "name": "Elizabeth",
+        "icon": "SPR_Icon_PC_Elizabeth_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-emilia2-01": {
+        "name": "Reckless Emilia",
+        "icon": "SPR_Icon_PC_Emilia2_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": true
+    },
+    "spr-icon-pc-emilia3-01": {
+        "name": "Emilia The Sage",
+        "icon": "SPR_Icon_PC_Emilia3_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": true
+    },
+    "spr-icon-pc-emilia-01": {
+        "name": "Emilia",
+        "icon": "SPR_Icon_PC_Emilia_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": false
+    },
+    "spr-icon-pc-falso-01": {
+        "name": "Falso",
+        "icon": "SPR_Icon_PC_Falso_01.png",
+        "group": "Cite Of Reboldouex",
+        "is_rare": false
+    },
+    "spr-icon-pc-friede-01": {
+        "name": "Friede",
+        "icon": "SPR_Icon_PC_Friede_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-ganazu2-01": {
+        "name": "Ganazu (Rare)",
+        "icon": "SPR_Icon_PC_Ganazu2_01.png",
+        "group": "Stock Characters",
+        "is_rare": true,
+        "hidden": true,
+        "classification": "Stock",
+        "sort_order": 12
+    },
+    "spr-icon-pc-ganazu-01": {
+        "name": "Ganazu",
+        "icon": "SPR_Icon_PC_Ganazu_01.png",
+        "group": "Stock Characters",
+        "is_rare": false,
+        "sort_order": 4
+    },
+    "spr-icon-pc-garcia-01": {
+        "name": "Garcia",
+        "icon": "SPR_Icon_PC_Garcia_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-giltine-01": {
+        "name": "Giltine",
+        "icon": "SPR_Icon_PC_Giltine_01.png",
+        "group": "Los Toldos",
+        "is_rare": false
+    },
+    "spr-icon-pc-gracielo-01": {
+        "name": "Gracielo",
+        "icon": "SPR_Icon_PC_Gracielo_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": false
+    },
+    "spr-icon-pc-grandma2-01": {
+        "name": "Pioneer Grenmah",
+        "icon": "SPR_Icon_PC_Grandma2_01.png",
+        "group": "Ustiur",
+        "is_rare": true
+    },
+    "spr-icon-pc-grandma-01": {
+        "name": "Grenmah",
+        "icon": "SPR_Icon_PC_Grandma_01.png",
+        "group": "Ustiur",
+        "is_rare": false
+    },
+    "spr-icon-pc-gurtrude-01": {
+        "name": "Gurtrude",
+        "icon": "SPR_Icon_PC_Gurtrude_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-hellena-01": {
+        "name": "Hellena",
+        "icon": "SPR_Icon_PC_Hellena_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-henik-01": {
+        "name": "Henik",
+        "icon": "SPR_Icon_PC_Henik_01.png",
+        "group": "Stock Characters",
+        "is_rare": false,
+        "sort_order": 9,
+        "classification": "Recruit"
+    },
+    "spr-icon-pc-idge2-01": {
+        "name": "Battlesmith Idge",
+        "icon": "SPR_Icon_PC_Idge2_01.png",
+        "group": "Cite Of Reboldouex",
+        "is_rare": true
+    },
+    "spr-icon-pc-idge-01": {
+        "name": "Idge",
+        "icon": "SPR_Icon_PC_Idge_01.png",
+        "group": "Cite Of Reboldouex",
+        "is_rare": false
+    },
+    "spr-icon-pc-irawan-01": {
+        "name": "Irawan",
+        "icon": "SPR_Icon_PC_Irawan_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": false
+    },
+    "spr-icon-pc-ivy-01": {
+        "name": "Ivy",
+        "icon": "SPR_Icon_PC_Ivy_01.png",
+        "group": "Ustiur",
+        "is_rare": false
+    },
+    "spr-icon-pc-jacky-01": {
+        "name": "Jacky",
+        "icon": "SPR_Icon_PC_Jacky_01.png",
+        "group": "Ustiur",
+        "is_rare": false
+    },
+    "spr-icon-pc-jack-01": {
+        "name": "Jack",
+        "icon": "SPR_Icon_PC_Jack_01.png",
+        "group": "Cite Of Reboldouex",
+        "is_rare": false
+    },
+    "spr-icon-pc-jaina-01": {
+        "name": "Jaina",
+        "icon": "SPR_Icon_PC_Jaina_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-jane-01": {
+        "name": "Jane",
+        "icon": "SPR_Icon_PC_Jane_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-jin-01": {
+        "name": "Jin",
+        "icon": "SPR_Icon_PC_Jin_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-kane-01": {
+        "name": "Kane",
+        "icon": "SPR_Icon_PC_Kane_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-karjalainen2-01": {
+        "name": "Designer Karjalainen",
+        "icon": "SPR_Icon_PC_Karjalainen2_01.png",
+        "group": "City of Auch",
+        "is_rare": true
+    },
+    "spr-icon-pc-karjalainen-01": {
+        "name": "Karjalainen",
+        "icon": "SPR_Icon_PC_Karjalainen_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-keuen-01": {
+        "name": "Keuen",
+        "icon": "SPR_Icon_PC_Keuen_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-kiss-01": {
+        "name": "Kiss",
+        "icon": "SPR_Icon_PC_Kiss_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-kurt-01": {
+        "name": "Kurt",
+        "icon": "SPR_Icon_PC_Kurt_01.png",
+        "group": "Los Toldos",
+        "is_rare": false
+    },
+    "spr-icon-pc-laval-01": {
+        "name": "Laval",
+        "icon": "SPR_Icon_PC_Laval_01.png",
+        "group": "Bahamar",
+        "is_rare": false
+    },
+    "spr-icon-pc-lisa-01": {
+        "name": "Lisa",
+        "icon": "SPR_Icon_PC_Lisa_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": false
+    },
+    "spr-icon-pc-lorch2-01": {
+        "name": "Meister Lorch",
+        "icon": "SPR_Icon_PC_Lorch2_01.png",
+        "group": "City of Auch",
+        "is_rare": true
+    },
+    "spr-icon-pc-lorch-01": {
+        "name": "Lorch",
+        "icon": "SPR_Icon_PC_Lorch_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-loretta-01": {
+        "name": "Loretta",
+        "icon": "SPR_Icon_PC_Loretta_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": false
+    },
+    "spr-icon-pc-ludin-01": {
+        "name": "Ludin",
+        "icon": "SPR_Icon_PC_Ludin_01.png",
+        "group": "Gigante",
+        "is_rare": false
+    },
+    "spr-icon-pc-lyndon-01": {
+        "name": "Lyndon",
+        "icon": "SPR_Icon_PC_Lyndon_01.png",
+        "group": "Cite Of Reboldouex",
+        "is_rare": false
+    },
+    "spr-icon-pc-marcelino-01": {
+        "name": "Marcelino",
+        "icon": "SPR_Icon_PC_Marcelino_01.png",
+        "group": "Ustiur",
+        "is_rare": false
+    },
+    "spr-icon-pc-mary-01": {
+        "name": "Mary",
+        "icon": "SPR_Icon_PC_Mary_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-mboma-01": {
+        "name": "Mboma",
+        "icon": "SPR_Icon_PC_Mboma_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": false
+    },
+    "spr-icon-pc-mertis-01": {
+        "name": "Mertis",
+        "icon": "SPR_Icon_PC_Mertis_01.png",
+        "group": "Unreleased",
+        "is_rare": false
+    },
+    "spr-icon-pc-mia-01": {
+        "name": "Mia",
+        "icon": "SPR_Icon_PC_Mia_01.png",
+        "group": "Unreleased",
+        "is_rare": false
+    },
+    "spr-icon-pc-miha-01": {
+        "name": "Miha",
+        "icon": "SPR_Icon_PC_Miha_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-miho-01": {
+        "name": "Miho",
+        "icon": "SPR_Icon_PC_Miho_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-nar2-01": {
+        "name": "Guardian Nar",
+        "icon": "SPR_Icon_PC_Nar2_01.png",
+        "group": "Unreleased",
+        "is_rare": true
+    },
+    "spr-icon-pc-nar-01": {
+        "name": "Nar",
+        "icon": "SPR_Icon_PC_Nar_01.png",
+        "group": "Unreleased",
+        "is_rare": false
+    },
+    "spr-icon-pc-natalie2-01": {
+        "name": "Banshee Natalie",
+        "icon": "SPR_Icon_PC_Natalie2_01.png",
+        "group": "Unreleased",
+        "is_rare": true
+    },
+    "spr-icon-pc-natalie-01": {
+        "name": "Natalie",
+        "icon": "SPR_Icon_PC_Natalie_01.png",
+        "group": "Unreleased",
+        "is_rare": false
+    },
+    "spr-icon-pc-nena-01": {
+        "name": "Nena",
+        "icon": "SPR_Icon_PC_Nena_01.png",
+        "group": "Bahamar",
+        "is_rare": false
+    },
+    "spr-icon-pc-neo-01": {
+        "name": "Neo",
+        "icon": "SPR_Icon_PC_Neo_01.png",
+        "group": "Stock Characters",
+        "is_rare": false,
+        "sort_order": 10,
+        "classification": "Recruit",
+        "hidden": true
+    },
+    "spr-icon-pc-nix-01": {
+        "name": "Nix",
+        "icon": "SPR_Icon_PC_Nix_01.png",
+        "group": "Stock Characters",
+        "is_rare": false,
+        "sort_order": 8,
+        "classification": "Recruit"
+    },
+    "spr-icon-pc-nolette-01": {
+        "name": "Nolette",
+        "icon": "SPR_Icon_PC_Nolette_01.png",
+        "group": "Stock Characters",
+        "is_rare": false,
+        "sort_order": 7,
+        "classification": "Recruit"
+    },
+    "spr-icon-pc-ouchsoldier-01": {
+        "name": "Rescue Knight",
+        "icon": "SPR_Icon_PC_Ouchsoldier_01.png",
+        "group": "Ustiur",
+        "is_rare": false
+    },
+    "spr-icon-pc-panfilo2-01": {
+        "name": "Battlecook Panfilo",
+        "icon": "SPR_Icon_PC_Panfilo2_01.png",
+        "group": "Cite Of Reboldouex",
+        "is_rare": true
+    },
+    "spr-icon-pc-panfilo-01": {
+        "name": "Panfilo",
+        "icon": "SPR_Icon_PC_Panfilo_01.png",
+        "group": "Cite Of Reboldouex",
+        "is_rare": false
+    },
+    "spr-icon-pc-psyche-01": {
+        "name": "Psyche",
+        "icon": "SPR_Icon_PC_Psyche_01.png",
+        "group": "Bahamar",
+        "is_rare": false
+    },
+    "spr-icon-pc-racel-01": {
+        "name": "Rascel",
+        "icon": "SPR_Icon_PC_Racel_01.png",
+        "group": "Unreleased",
+        "is_rare": false
+    },
+    "spr-icon-pc-rakib-01": {
+        "name": "Rakib",
+        "icon": "SPR_Icon_PC_Rakib_01.png",
+        "group": "Stock Characters",
+        "is_rare": false,
+        "sort_order": 6,
+        "classification": "Recruit"
+    },
+    "spr-icon-pc-ralph-01": {
+        "name": "Ralph",
+        "icon": "SPR_Icon_PC_Ralph_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": false
+    },
+    "spr-icon-pc-ramiro-01": {
+        "name": "Ramiro",
+        "icon": "SPR_Icon_PC_Ramiro_01.png",
+        "group": "Cite Of Reboldouex",
+        "is_rare": false
+    },
+    "spr-icon-pc-retiff-01": {
+        "name": "Retiff",
+        "icon": "SPR_Icon_PC_Retiff_01.png",
+        "group": "Stock Characters",
+        "is_rare": false,
+        "sort_order": 0
+    },
+    "spr-icon-pc-rio2-01": {
+        "name": "Conductor Rio",
+        "icon": "SPR_Icon_PC_Rio2_01.png",
+        "group": "City of Auch",
+        "is_rare": true
+    },
+    "spr-icon-pc-rio-01": {
+        "name": "Rio",
+        "icon": "SPR_Icon_PC_Rio_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-risky-01": {
+        "name": "Risky",
+        "icon": "SPR_Icon_PC_Risky_01.png",
+        "group": "Unreleased",
+        "is_rare": false
+    },
+    "spr-icon-pc-roht-01": {
+        "name": "Roht",
+        "icon": "SPR_Icon_PC_Roht_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": false
+    },
+    "spr-icon-pc-roizia-01": {
+        "name": "Roizia",
+        "icon": "SPR_Icon_PC_Roizia_01.png",
+        "group": "Stock Characters",
+        "is_rare": false,
+        "sort_order": 5,
+        "classification": "Recruit"
+    },
+    "spr-icon-pc-romina2-01": {
+        "name": "Cadet Romina",
+        "icon": "SPR_Icon_PC_Romina2_01.png",
+        "group": "Ustiur",
+        "is_rare": true
+    },
+    "spr-icon-pc-romina-01": {
+        "name": "Romina",
+        "icon": "SPR_Icon_PC_Romina_01.png",
+        "group": "Ustiur",
+        "is_rare": false
+    },
+    "spr-icon-pc-rosa-01": {
+        "name": "Rosa",
+        "icon": "SPR_Icon_PC_Rosa_01.png",
+        "group": "Gigante",
+        "is_rare": false
+    },
+    "spr-icon-pc-sakura-01": {
+        "name": "Sakura",
+        "icon": "SPR_Icon_PC_Sakura_01.png",
+        "group": "Unreleased",
+        "is_rare": false
+    },
+    "spr-icon-pc-selane-01": {
+        "name": "Selane",
+        "icon": "SPR_Icon_PC_Selane_01.png",
+        "group": "Unreleased",
+        "is_rare": false
+    },
+    "spr-icon-pc-selva-01": {
+        "name": "Selva",
+        "icon": "SPR_Icon_PC_Selva_01.png",
+        "group": "Unreleased",
+        "is_rare": false
+    },
+    "spr-icon-pc-seolhwa-01": {
+        "name": "Seolhwa",
+        "icon": "SPR_Icon_PC_Seolhwa_01.png",
+        "group": "Bahamar",
+        "is_rare": false
+    },
+    "spr-icon-pc-serth-01": {
+        "name": "Serth",
+        "icon": "SPR_Icon_PC_Serth_01.png",
+        "group": "Ustiur",
+        "is_rare": false
+    },
+    "spr-icon-pc-sharif-01": {
+        "name": "Sharif",
+        "icon": "SPR_Icon_PC_Sharif_01.png",
+        "group": "Cite Of Reboldouex",
+        "is_rare": false
+    },
+    "spr-icon-pc-sharon2-01": {
+        "name": "Sharon The Sage",
+        "icon": "SPR_Icon_PC_Sharon2_01.png",
+        "group": "Ustiur",
+        "is_rare": true
+    },
+    "spr-icon-pc-sharon-01": {
+        "name": "Sharon",
+        "icon": "SPR_Icon_PC_Sharon_01.png",
+        "group": "Ustiur",
+        "is_rare": false
+    },
+    "spr-icon-pc-sherry-01": {
+        "name": "Sherry",
+        "icon": "SPR_Icon_PC_Sherry_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-sierra-01": {
+        "name": "Sierra",
+        "icon": "SPR_Icon_PC_Sierra_01.png",
+        "group": "Ustiur",
+        "is_rare": false
+    },
+    "spr-icon-pc-soho2-01": {
+        "name": "Soho The Fighter",
+        "icon": "SPR_Icon_PC_Soho2_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": true
+    },
+    "spr-icon-pc-soho-01": {
+        "name": "Soho",
+        "icon": "SPR_Icon_PC_Soho_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": false
+    },
+    "spr-icon-pc-sorang-01": {
+        "name": "Sorang",
+        "icon": "SPR_Icon_PC_Sorang_01.png",
+        "group": "Gigante",
+        "is_rare": false
+    },
+    "spr-icon-pc-soso-01": {
+        "name": "Soso",
+        "icon": "SPR_Icon_PC_Soso_01.png",
+        "group": "Gigante",
+        "is_rare": false
+    },
+    "spr-icon-pc-tiburon-01": {
+        "name": "Tiburon",
+        "icon": "SPR_Icon_PC_Tiburon_01.png",
+        "group": "Cite Of Reboldouex",
+        "is_rare": false
+    },
+    "spr-icon-pc-tikanile-01": {
+        "name": "Tikanile",
+        "icon": "SPR_Icon_PC_Tikanile_01.png",
+        "group": "Stock Characters",
+        "is_rare": false,
+        "sort_order": 3
+    },
+    "spr-icon-pc-torshe-01": {
+        "name": "Torsche",
+        "icon": "SPR_Icon_PC_Torshe_01.png",
+        "group": "Unreleased",
+        "is_rare": false
+    },
+    "spr-icon-pc-trina-01": {
+        "name": "Trina",
+        "icon": "SPR_Icon_PC_Trina_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-unknown-01": {
+        "name": "Unknown",
+        "icon": "SPR_Icon_PC_Unknown_01.png",
+        "group": "Unknown",
+        "is_rare": false
+    },
+    "spr-icon-pc-valleria2-01": {
+        "name": "Valleria Vendetta",
+        "icon": "SPR_Icon_PC_Valleria2_01.png",
+        "group": "City of Auch",
+        "is_rare": true
+    },
+    "spr-icon-pc-valleria-01": {
+        "name": "Valleria",
+        "icon": "SPR_Icon_PC_Valleria_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-vanessa-01": {
+        "name": "Vanessa",
+        "icon": "SPR_Icon_PC_Vanessa_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": false
+    },
+    "spr-icon-pc-verita-01": {
+        "name": "Verita",
+        "icon": "SPR_Icon_PC_Verita_01.png",
+        "group": "Cite Of Reboldouex",
+        "is_rare": false
+    },
+    "spr-icon-pc-viki-01": {
+        "name": "Viki",
+        "icon": "SPR_Icon_PC_Viki_01.png",
+        "group": "City of Auch",
+        "is_rare": false
+    },
+    "spr-icon-pc-vinar-01": {
+        "name": "Vinar",
+        "icon": "SPR_Icon_PC_Vinar_01.png",
+        "group": "Port Of Coimbra",
+        "is_rare": false
+    },
+    "spr-icon-pc-winona-01": {
+        "name": "Winona",
+        "icon": "SPR_Icon_PC_Winona_01.png",
+        "group": "Unreleased",
+        "is_rare": false
+    },
+    "spr-icon-pc-yeganeh2-01": {
+        "name": "Scavenger Yeganeh",
+        "icon": "SPR_Icon_PC_Yeganeh2_01.png",
+        "group": "Cite Of Reboldouex",
+        "is_rare": true,
+        "classification": "Scout"
+    },
+    "spr-icon-pc-yeganeh-01": {
+        "name": "Yeganeh",
+        "icon": "SPR_Icon_PC_Yeganeh_01.png",
+        "group": "Cite Of Reboldouex",
+        "is_rare": false
+    },
+    "spr-icon-pc-zaved-01": {
+        "name": "Zaved",
+        "icon": "SPR_Icon_PC_Zaved_01.png",
+        "group": "Unreleased",
+        "is_rare": false
+    },
+    "spr-icon-pc-echella2-01": {
+        "name": "Echella (Rare)",
+        "icon": "SPR_Icon_PC_Echella2_01.png",
+        "group": "Stock Characters",
+        "is_rare": true,
+        "classification": "Stock",
+        "hidden": true,
+        "sort_order": 11
+    }
+}
